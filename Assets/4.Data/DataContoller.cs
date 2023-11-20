@@ -23,6 +23,7 @@ public class DataContoller : MonoBehaviour
                     break;
                 }
             }
+            
         }
     }
 }

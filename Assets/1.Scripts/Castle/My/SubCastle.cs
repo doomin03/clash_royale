@@ -5,19 +5,22 @@ using UnityEngine;
 public class SubCastle : Castle
 {
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        classData.isMain = false;
         classData.finding = "enemy";
-        classData.hP = 2000f;
-        classData.damege = 100;
-        classData.attackRange = 80;
-        maxHP = classData.hP;
+        classData.HP = 5000.0f;
+        classData.damege = 50;
+        classData.attackRange = 50;
         curHP = maxHP;
+        curHP = classData.HP;
+
     }
 
-    private void Update()
+
+    // Update is called once per frame
+    void Update()
     {
+        Debug.Log(curHP);
         Attack();
     }
 }

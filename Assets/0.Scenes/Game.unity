@@ -1252,7 +1252,7 @@ GameObject:
   - component: {fileID: 566839002}
   - component: {fileID: 570230522}
   - component: {fileID: 569132090}
-  - component: {fileID: 570230525}
+  - component: {fileID: 570230523}
   m_Layer: 0
   m_Name: Castle
   m_TagString: my
@@ -1327,7 +1327,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567204602}
   m_Mesh: {fileID: 4300002, guid: d6cb73f66a1e20940a66ebf660563c78, type: 3}
---- !u!114 &570230525
+--- !u!114 &570230523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1339,11 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0307140255631642b0bd274b52960ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyHPImage: {fileID: 1843104365}
-  myCost: {fileID: 1810999123}
-  enemyCost: {fileID: 1433778674}
-  cost: {fileID: 5043778251251099671, guid: b25bf0df7aea1244fb5962026ebe2758, type: 3}
-  gameOver: {fileID: 220940375}
+  MyHPImage: {fileID: 1681163305}
 --- !u!1 &666694350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,10 +1605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyHPImage: {fileID: 1843104365}
-  myCost: {fileID: 1810999123}
-  enemyCost: {fileID: 1433778674}
-  cost: {fileID: 5043778251251099671, guid: b25bf0df7aea1244fb5962026ebe2758, type: 3}
-  gameOver: {fileID: 220940375}
 --- !u!1 &881132482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,37 +2227,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &963207740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 963207741}
-  m_Layer: 0
-  m_Name: EnemySpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &963207741
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963207740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.31}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970717546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,7 +3092,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420539119
 GameObject:
@@ -3818,10 +3779,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300038, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -4378,6 +4339,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781785075}
   m_CullTransparentMesh: 1
+--- !u!1 &1783236098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783236099}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783236099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783236098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1789737837 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4688403637599047812, guid: ffefb4ae624c0524cab0a82d1e078b24, type: 3}
@@ -4647,10 +4639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyHPImage: {fileID: 0}
-  myCost: {fileID: 0}
-  enemyCost: {fileID: 0}
-  cost: {fileID: 0}
-  gameOver: {fileID: 0}
 --- !u!1 &1843104363
 GameObject:
   m_ObjectHideFlags: 0
@@ -10665,6 +10653,7 @@ GameObject:
   - component: {fileID: 3418698468885258598}
   - component: {fileID: 3418698468886552902}
   - component: {fileID: 3418698468887552902}
+  - component: {fileID: 3418698468887552903}
   m_Layer: 0
   m_Name: SubCastle
   m_TagString: enemy
@@ -10739,6 +10728,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3418698468887552903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418698468885298502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f726a583f6c024980d915b3ca54f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyHPImage: {fileID: 2028723910}
 --- !u!23 &3423276629810052636
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12663,13 +12665,27 @@ GameObject:
   - component: {fileID: 4329273626612430407}
   - component: {fileID: 4329273626609530471}
   - component: {fileID: 4329273626610529447}
+  - component: {fileID: 4329273626612525672}
   m_Layer: 0
-  m_Name: House9 (2)
+  m_Name: SubCastle
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!114 &4329273626612525672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4329273626612525671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f726a583f6c024980d915b3ca54f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyHPImage: {fileID: 970717548}
 --- !u!1 &4361633126157218920
 GameObject:
   m_ObjectHideFlags: 0
@@ -14753,8 +14769,9 @@ GameObject:
   - component: {fileID: 5341995539697725957}
   - component: {fileID: 5341995539696398885}
   - component: {fileID: 5341995539695300837}
+  - component: {fileID: 5341995539697725958}
   m_Layer: 0
-  m_Name: SubCastle
+  m_Name: MainCastle
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14776,6 +14793,20 @@ Transform:
   m_Father: {fileID: 1242635601}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &5341995539697725958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5341995539697298981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0f7ebc76fc22c49989194a2fa1c194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyHPImage: {fileID: 920590717}
+  EnemySpawn: {fileID: 1783236099}
 --- !u!33 &5343432110931982157
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14820,6 +14851,7 @@ GameObject:
   - component: {fileID: 5368404931427685322}
   - component: {fileID: 5368404931426554121}
   - component: {fileID: 5368404931427685321}
+  - component: {fileID: 5368404931427685323}
   m_Layer: 0
   m_Name: MainCastle
   m_TagString: my
@@ -14915,10 +14947,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyHPImage: {fileID: 362957244}
-  myCost: {fileID: 1810999123}
-  enemyCost: {fileID: 1433778674}
-  cost: {fileID: 5043778251251099671, guid: b25bf0df7aea1244fb5962026ebe2758, type: 3}
-  gameOver: {fileID: 220940375}
+--- !u!114 &5368404931427685323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368404931425422601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4897841a012bf4099f088ba3676256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyHPImage: {fileID: 362957244}
 --- !u!23 &5389258541789428676
 MeshRenderer:
   m_ObjectHideFlags: 0

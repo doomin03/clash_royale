@@ -1,29 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using UnityEngine.UI;
 using UnityEngine;
 
 public class MainCastle : Castle
 {
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        classData.isMain = true;
         classData.finding = "enemy";
-        classData.hP = 3500;
-        classData.damege = 150;
-        classData.attackRange = 80;
-        maxHP = classData.hP;
-        curHP = maxHP;
+        classData.HP = 5000.0f;
+        classData.damege = 50;
+        classData.attackRange = 50;
+        curHP = classData.HP;
     }
 
-
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (curHP <= maxHP)
+        if (curHP < classData.HP)
         {
             Attack();
         }
-        
     }
 }
